@@ -1,0 +1,19 @@
+{
+  "name": "kycol.beta",
+  "version": "0.1.1",
+  "description": "The library for controlling the characters that can be typed/displayed in HTML text fields.",
+  "main": "js/kycol-beta-0.1.0.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josafatngoma/kycol.git"
+  },
+  "author": "Josafat Ngoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josafatngoma/kycol/issues"
+  },
+  "homepage": "https://kycol.kavenah.com"
+}

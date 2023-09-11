@@ -8,33 +8,69 @@
 </head>
 <body>
 
+    <!-- Tutorial: https://kycol.kavenah.com -->
+
     <div class="container">
         <h2>Kycol</h2>
-        <span>Version: Beta 0.1.0</span>
+        <span>Version: Beta 0.1.1</span>
         <form>
+            <!-- 
+                PT// Aqui utilizei as propriedades conjuntas 
+                EN// Here I used the joint properties
+                kycol (l=letters, a=accents, s=space)
+            -->
             <div class="form-row">
                 <label>Full Name</label>
-                <input type="text" kycol="<[n].*9/[l].*2/[n].*3>">
+                <input type="text" kycol="[l+a+s]">
             </div>
+
+            <!-- 
+                PT// Aqui utilizei as propriedades declaradas
+                EN// Here I used the declared properties
+                kycol (email numbers)
+            -->
             <div class="form-row">
                 <label>E-mail</label>
-                <input type="email">
+                <input type="email" kycol="email numbers">
             </div>
+
+            <!-- 
+                PT// Aqui utilizei as propriedades declaradas, habilita apenas os caracteres que são permitidos num telephone
+                EN// Here I used the declared properties, it only enables characters that are allowed in an telephone
+                kycol (tel)
+            -->
             <div class="form-row">
                 <label>Telephone</label>
-                <input type="tel">
+                <input type="tel" kycol="tel">
             </div>
+
+            <!-- 
+                PT// Aqui utilizei as propriedades regulares e dentro delas usei as propriedades específicas/particulare, com limite de 1 caracter apenas
+                EN// Here I used regular properties and within them I used specific/particulare properties, with a limit of 1 character only
+                kycol (<{12345}.*1>)
+            -->
             <div class="form-row">
                 <label>
                     Years of Experience
                     <span>(Max - 5 years)</span>
                 </label>
-                <input type="number">
+                <input type="number" kycol="<{12345}.*1>">
             </div>
+
+            <!-- 
+                PT// Aqui utilizei as propriedades regulares e dentro delas usei as propriedades conjuntas
+                EN// Here I used regular properties and within them I used joint properties
+                kycol (<[n].*9/[l].*2/[n].*3>)
+            -->
             <div class="form-row">
-                <label>Nome Completo</label>
-                <input type="text">
+                <label>Bilhete de Identidade</label>
+                <input type="text" kycol="<[n].*9/[l].*2/[n].*3>">
             </div>
+
+            <!-- 
+                PT// Este é um campo livre em que não se aplicou o Kycol
+                EN// This is a free field in which Kycol was not applied
+             -->
             <div class="form-row">
                 <label>Description</label>
                 <textarea rows="5"></textarea>
