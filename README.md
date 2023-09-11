@@ -1,5 +1,5 @@
 # [Kycol Js](https://kycol.kavenah.com/) 
-Version: BETA 0.1.0
+Version: BETA 0.1.1
 
 The library for controlling the characters that can be typed/displayed in HTML text fields.
 
